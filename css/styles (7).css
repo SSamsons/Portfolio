@@ -1,0 +1,123 @@
+body {
+    display: grid;
+    font-family: Arial, Helvetica, sans-serif;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+        'header'
+        'hero'
+        'work'
+        'about'
+        'photo'
+        'contact'
+        'footer';
+    gap: 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+@media (min-width: 768px) {
+    body {
+        grid-template-areas:
+            "header header"
+            "hero hero"
+            "work work"
+            "about photo"
+            "contact contact"
+            "footer footer";
+        gap: 20px;
+    }
+}
+@media  (min-width: 1024px) {
+    body{
+        grid-template-areas: /*Рисует схему расположения блоков с помощью имен*/
+            'header header'
+            'hero hero'
+            'work work'
+            'about photo'
+            'contact contact'
+            'footer footer';
+        gap: 20px;
+    }
+}
+.main-header{
+    display: flex;
+    justify-content: space-between; align-items: center;
+    grid-area: header;
+}
+.hero{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    grid-area: hero;   
+}
+.portfolio{
+    grid-area: work;
+}
+.portfolio-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(280px, 1fr));
+    gap: 1.5rem;
+}
+.portfolio-card{
+    font-size: 1.2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 1.25rem;
+    color: #1e90ff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    text-align: center;
+    background-color: #fff;
+}
+.portfolio-card h3 {
+    margin-top: 0.5rem;
+}
+.about-text{
+    grid-area: about;
+}
+.about-photo{
+    grid-area: photo;
+}
+.about-photo img{
+    max-width: 100%;
+    height: auto;
+    width: 200px;
+    border-radius: 8px;
+    display: block;
+    margin: 0 auto;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+.main-footer{
+    grid-area: footer;
+}
+
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background: #1e90ff;
+    color: white;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    z-index: 1000;
+    transition: top 0.2s ease-in-out;
+}
+
+.skip-link:focus {
+    top: 0;
+}
+
+.contact {
+    grid-area: contact;
+    padding: 1.5rem;
+    border: 1px solid #ddd;
+    border-radius:8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    text-align: center;
+    background-color: #fff;
+}
+:focus{
+    outline: 3px solid #1e90ff;
+    outline-offset: 2px;
+}

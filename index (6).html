@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Портфолио дизайнера</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <body>
+        <a class="skip-link" href="#main">Перейти к контенту</a>
+        <header class="main-header">
+            <div class="logo">
+                <h1> Designer Beginer</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">Главная</a></li>
+                    <li><a href="#">О себе</a></li>
+                    <li><a href="#">Работы</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main id="main">
+            <section class="hero">
+                <h2>Станислав Самсонов</h2>
+            </section>
+            <section class="portfolio">
+                <h2>Мои работы</h2>
+                <div class='portfolio-grid'>
+                    <article class="portfolio-card">
+                        <div class="icon">🌐</div>
+                        <h3>Сайт 1</h3>
+                    </article>
+                    <article class="portfolio-card">
+                        <div class="icon">🌐</div>
+                        <h3>Сайт 2</h3>
+                    </article>
+                    <article class="portfolio-card">
+                        <div class="icon">🌐</div>
+                        <h3>Сайт 3</h3>
+                    </article>
+                    <article class="portfolio-card">
+                        <div class="icon">🌐</div>
+                        <h3>Сайт 4</h3>
+                    </article>
+                    <article class="portfolio-card">
+                        <div class="icon">🌐</div>
+                        <h3>Сайт 5</h3>
+                    </article>
+                    <article class="portfolio-card">
+                        <div class="icon">🌐</div>
+                        <h3>Сайт 6</h3>
+                    </article>
+                </div>
+            </section>
+            <section class="about">
+                <div class="about-text">
+                    <p>Начинающий веб-дизайнер и иллюстратор</p>
+                    <p>Пробую создавать красивые и функциональные сайты</p>
+                </div>
+                <div class="about-photo">
+                    <img src="img/photo_2026-02-25 01.12.29.jpeg" alt="Фотография дизайнера">
+                </div>
+            </section>
+            <section id="contact" class="contact">
+                <h2>Связаться со мной</h2>
+                <form action="#" method="post">
+                    <div class="form-group">
+                        <label for="name">Имя (обязательно)</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>                   
+                    <div class="form-group">
+                        <label for="email">email</label>
+                        <input type="email" id="email" name="email">
+                    </div>
+                    <div class="form-group">
+                        <input type="checkbox" id="subscribe" name="subscribe">
+                        <label for="subscribe">Подписаться на рассылку</label>
+                    </div>
+                    <button type="submit">Отправить</button>
+                </form>
+            </section>
+            <div aria-live="polite" class="form-error"></div>
+        </main>
+        <footer class="main-footer">
+            <div class="social-links">
+                <a href="#" aria-label="Telegram">
+                    <i class="fab fa-telegram"></i>
+                </a>
+                <a href="#" aria-label="Github">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="#" aria-label="Zapretogram">
+                    <i class="fab fa-Zapretogram"></i>
+                </a>
+            </div>
+            <p>Email:
+                <a href="mailto:email@gmail.ru">email@gmail.ru</a>
+            </p>
+            <p>Телефон для связи: 
+                <a href="tel:+7 (999) 123-45-67">+7 (999) 123-45-67</a>
+            </p>
+        </footer>
+    </body>
+</html>
